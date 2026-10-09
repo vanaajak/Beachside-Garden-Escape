@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    font-family: "Ciento", Regular;
+    src: url("./assets/fonts/Ciento Regular.otf");
+    font-size: 1.3rem;
+    line-height: 1.6;
+    transition: background-color 0.8s;
+
+}
+
+.scene {
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Tiki Tropic";
+    src: url("./assets/fonts/Tiki Tropic.ttf");
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.choices {
+    display:flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.choices a {
+    text-decoration: none;
+    color: #362004;
+    letter-spacing: 0.15em;
+    padding: 10px 20px;
+    border: 2px solid currentColor;
+    border-radius: 999px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.choices a:hover {
+    transform:translateY(-3px);
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.cottage {
+    background-color: #f3e3c3;
+    color: #5a3e2b;
+}
+
+.door {
+    background-color: #f3e3c3;
+    color: #3d2a1e
+}
+
+.window {
+    background-color: #bcd8e0;
+    color: #2c4a55;
+}
+
+.wrong {
+    background-color: #6e6a75;
+    color:#ece8f0;
+}
+
+.garden {
+    background-color: #c7e3b0;
+    color: #2f4a26;
+}
+
+.shell-page {
+    background-color: #fbeff0;
+    color: #7a4a55
+}
+
+.shell-choices {
+    display: flex;              
+    flex-wrap: nowrap;          
+    justify-content: center;    
+    align-items: center;       
+    gap: 40px;                  
+    margin-top: 30px;
+}
+
+.shell-choices img {
+    width: 140px;               
+    height: auto;               
+    display: block;
+    transition: transform 0.4s;
+}
+
+.shell-choices img:hover {
+    transform: rotate(-8deg) scale(1.1);
+}
